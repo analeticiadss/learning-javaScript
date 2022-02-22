@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ana leticia - javascript</title>
+    <style>
+        /* parte de css */
+        body {
+            background-color: antiquewhite;
+            color: rgb(0, 0, 0);
+            font: normal 15pt Arial;
+        }
+        h1 {
+            color: rgb(250, 114, 60);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>olá, mundo!</h1>
+    <p>praticando manipulação de dados!</p>
+    <script>
+        /* essa é a parte de javascript */
+
+        // var numero1 = Number.parseInt(window.prompt("Digite um número"))
+        // var numero2 = Number.parseInt(window.prompt("Digite outro número"))
+        /*
+            Number.parseInt é para transformar string para numero inteiro
+            Number.parseFloat é para transformar string para número floar
+            Number() o javascript converte automaticamente
+        */
+
+       // var numero1 = Number.parseFloat(window.prompt("Digite um número"))
+       // var numero2 = Number.parseFloat(window.prompt("Digite outro número"))
+        
+       var numero1 = Number(window.prompt("Digite um número"))
+       var numero2 = Number(window.prompt("Digite outro número"))
+
+        var soma = numero1 + numero2
+        //window.alert("a soma dos números é: " + soma)
+
+        // + pode servir para adição e para concatenação
+
+        /* NUMERO PARA STRING
+            String -> converte automaticamente de num para string
+            *o que eu quero converter*.toString() 
+        */
+
+        var idade1 = (window.prompt("qual é a sua idade?")).toString()
+        //var idade2 = String(window.prompt("qual é a idade da sua mãe?"))
+
+        //window.alert("a idades: " + idade1 + " e " + idade2)
+
+        /* CONCATENANDO STRINGS DE UMA FORMA MELHOR
+            `a aluna ${nome} de idade ${idade}`
+        */
+
+        var nome = window.prompt("qual é o seu nome?")
+        window.alert(`a aluna ${nome} tem ${idade1} anos`)
+        window.alert(`a soma de ${numero1} e ${numero2} é igual a ${soma}`)
+
+        /*
+        nome.length //tamanho da string
+        nome.toUpperCase // tudo para letras maiusculas
+        nome.toLowerCase // tudo para minusculas
+        */
+    </script>
+    
+</body>
+</html>

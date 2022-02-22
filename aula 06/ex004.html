@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+
+    </style>
+
+</head>
+<body>
+    <script>
+         /*
+            nome.length //tamanho da string
+            nome.toUpperCase // tudo para letras maiusculas
+            nome.toLowerCase // tudo para minusculas
+        */
+
+        var nome = window.prompt("qual é o seu nome?")
+        document.write(`Olá, ${nome}, seu nome tem ${nome.length} letras.<br>`)
+        document.write(`seu nome em letras maiusculas: ${nome.toUpperCase()}. <br>`)
+        document.write(`seu nome apenas em letras minusculas: ${nome.toLowerCase()}. <br>`)
+
+        /* formatar numero 
+            *numero que quer formatar*.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+                   ----> vai botar o $ na frente do valor
+            *numero que quer formatar*.toFixed(*numero de casa decimal que quer que apareça*)
+            *numero que quer formatar*.toFixed(*supondo que sejam 2 casas decimais).replace('.', ',')
+                    ---->  pega um numero com 2 casas decimais e substitui o ponto por vírgula
+        */
+
+    </script>
+</body>
+</html>
